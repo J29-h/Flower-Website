@@ -1,0 +1,198 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: #dae5d5;
+}
+
+/* Section header CSS Start */
+.bg-dark-head {
+    background: linear-gradient(#343a40, transparent);
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    display: flex;
+    color: #FEFAE0;
+    transition: 0.6s ease;
+}
+
+#first {
+    color: #FEFAE0;
+    transition: 0.6s ease;
+}
+
+#second {
+    color: #FEFAE0;
+    border-bottom: transparent;
+    transition: 0.6s ease;
+}
+
+#third {
+    color: #FEFAE0;
+    border-bottom: transparent;
+    transition: 0.6s ease;
+}
+
+a.navbar-brand:hover #first {
+    color: #41bc41;
+}
+
+a.navbar-brand:hover #second {
+    color: #FEFAE0;
+    transform: rotateZ(-30deg) !important;
+}
+
+a.navbar-brand:hover #third {
+    color: #6e5033;
+    border-bottom: #6e5033 solid 2px;
+}
+
+li.nav-item #active {
+    color: #FEFAE0;
+    transition: 0.6s ease;
+}
+
+li.nav-item {
+    transition: 0.6s ease;
+}
+
+li.nav-item:hover {
+    color: #FEFAE0;
+}
+
+/* Section header CSS Ends */
+
+.txt-Dark-Green {
+    color: #204520;
+}
+
+.line-Brown {
+    border: #6e5033 solid 1.7px;
+    width: 60px;
+    margin-top: -5px;
+}
+
+#plant-section .image img {
+    width: 100%;
+    height: 100%;
+}
+
+#plant-section .image {
+    border-radius: 25px 0 25px 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 200px;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.plant-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: #eeeeee;
+
+
+}
+
+.style_plant {
+    background: #D2E2C6;
+    margin: 40px;
+    border-radius: 10px;
+
+}
+
+.plant-box:hover {
+    transform: scale(1.05);
+}
+
+.plant-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.plant-details {
+    padding: 15px;
+}
+
+.plant-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plant-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.plant-price {
+    font-size: 1rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+section {
+    margin: 40px;
+}
+
+
+
+
+#hero p {
+    font-weight: 500 !important;
+    font-size: 1rem;
+    color: #6e5033;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#hero .image {
+    border-radius: 0 50px 50px 50px;
+    overflow: hidden;
+    text-align: right;
+}
+
+#hero h1 {
+    text-align: center;
+}
+
+b, strong {
+    font-weight: 700;
+    color: #FEFAE0;
+}
+
+.message-box {
+    background-color: #82937b;
+    transition: background-color 0.3s ease;
+}
+
+.message-box:hover {
+    background-color: #abb3a8;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #ccd5ae;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

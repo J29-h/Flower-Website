@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/xD5XJ3F1lEVlMJKZQDZl4/senQlmh/j"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css" />
+    <style>
+        .popup {
+          position: fixed;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          border-radius: 8px;
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          z-index: 10;
+        }
+    
+        .success {
+          background-color: green;
+        }
+    
+        .error {
+          background-color: red;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="popup" id="statusPopup">
+        </div>
+        <div id="login-box" class="form-container show">
+            <img src="Media/Plants.png" alt="Logo" id="logo-1">
+            <hr>
+            <h1>Login to Plants Store</h1>
+            <hr>
+            <form action="/login" method="post">
+                <div class="item">
+                    <input type="text" id="username" placeholder="Username" name="username" required>
+                    <div class="error-label" id="usernameError"></div>
+                </div>
+
+                <div class="item">
+                    <input type="password" id="password" placeholder="Password" name="password" required>
+                    <div class="error-label" id="passwordError"></div>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+            <a onclick="toggleForm()">Don't have an account? <span style="color:red;">Create Account Now</span></a>
+        </div>
+
+        <div id="register-box" class="form-container hide">
+            <img src="Media/Plants.png" alt="Logo" id="logo-2">
+            <hr>
+            <h1>Register for Plants Store</h1>
+            <hr>
+          <!-- Registration form -->
+<form action="/register" method="post">
+    <div class="item">
+      <input type="text" id="reg-username" placeholder="Username" name="regUsername" required>
+      <div class="error-label" id="reg-usernameError"></div>
+    </div>
+  
+    <div class="item">
+      <input type="password" id="reg-password" placeholder="Password" name="regPassword" required>
+      <div class="error-label" id="reg-passwordError"></div>
+    </div>
+  
+   
+  
+    <button type="submit">Register</button>
+    <a onclick="toggleForm()">Already have an account? <span style="color:red;">Login</span></a>
+  </form>
+  
+        </div>
+    </div>
+    <script>
+        function showPopup() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var registerStatus = urlParams.get('registerStatus');
+            var message = urlParams.get('message');
+
+            var statusPopup = document.getElementById('statusPopup');
+
+            if (registerStatus === 'success') {
+                statusPopup.innerText = message || 'Registration successful';
+                statusPopup.style.backgroundColor = 'green';
+                statusPopup.style.display = 'block';
+            } else if (registerStatus === 'error') {
+                statusPopup.innerText = message || 'Registration failed';
+                statusPopup.style.backgroundColor = 'red';
+                statusPopup.style.display = 'block';
+            }
+        }
+
+        setTimeout(function() {
+                statusPopup.style.display = 'none';
+            }, 1000);
+        document.addEventListener('DOMContentLoaded', showPopup);
+    </script>
+    <script>
+        function toggleForm() {
+            var loginBox = document.getElementById('login-box');
+            var registerBox = document.getElementById('register-box');
+
+            if (loginBox.classList.contains('show')) {
+                loginBox.classList.remove('show');
+                loginBox.classList.add('hide');
+                registerBox.classList.remove('hide');
+                registerBox.classList.add('show');
+            } else {
+                loginBox.classList.remove('hide');
+                loginBox.classList.add('show');
+                registerBox.classList.remove('show');
+                registerBox.classList.add('hide');
+            }
+        }
+    </script>
+</body>
+
+</html>

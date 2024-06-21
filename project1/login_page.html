@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="Home_Page.html" class="logo">Health Plants</a>
+      <ul>
+        <li><a href="Home_Page.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login_page.html" class="active">Login</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="login">
+        <h2>Login</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="Username"
+            pattern="^[^\s]+$"
+            title="Spaces are not allowed"
+          />
+          <input type="password" placeholder="Password" maxlength="14" />
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <div class="signup">
+        <h2>Sign Up</h2>
+        <form>
+          <input type="text" placeholder="Username" />
+          <input
+            type="email"
+            placeholder="Email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+          <input type="password" placeholder="Password" maxlength="14" />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="background">
+     
+    <footer>
+      <p>&copy; 2023 Plant Store. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

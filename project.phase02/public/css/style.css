@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/* Section Common CSS Start */
+html,
+body {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #dae5d5;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+li {
+    display: block;
+}
+
+a {
+    color: unset;
+    cursor: pointer;
+    text-decoration: unset;
+}
+
+.txt-Dark-Green {
+    color: #204520;
+}
+
+.txt-Paige {
+    color: #FEFAE0;
+}
+
+.bg-Dark-Green {
+    background-color: #82937b;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.line-Brown {
+    border: #6e5033 solid 1.7px;
+    width: 60px;
+    margin-top: -5px;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-70 {
+    width: 70px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.bg-dark-head {
+    background: linear-gradient(#343a40, transparent);
+}
+
+/* Section Common CSS End */
+
+/* Section header CSS Start */
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    display: flex;
+    color: #FEFAE0;
+    transition: 0.6s ease;
+}
+
+#first {
+    color: #FEFAE0;
+    transition: 0.6s ease;
+}
+
+#second {
+    color: #FEFAE0;
+    border-bottom: transparent;
+    transition: 0.6s ease;
+}
+
+#third {
+    color: #FEFAE0;
+    border-bottom: transparent;
+    transition: 0.6s ease;
+}
+
+a.navbar-brand:hover #first {
+    color: #41bc41;
+}
+
+a.navbar-brand:hover #second {
+    color: #FEFAE0;
+    transform: rotateZ(-30deg) !important;
+}
+
+a.navbar-brand:hover #third {
+    color: #6e5033;
+    border-bottom: #6e5033 solid 2px;
+}
+
+li.nav-item {
+    transition: 0.6s ease;
+}
+
+li.nav-item #active {
+    color: #FEFAE0;
+}
+
+li.nav-item:hover {
+    color: #FEFAE0;
+}
+
+/* Section header CSS Ends */
+
+/* Section Carousel CSS Start */
+#carousel {
+    margin-top: -65px;
+    z-index: 2;
+}
+
+#carousel h1 {
+display: none;
+}
+
+.carousel img {
+    display: block;
+    height: 555px !important;
+    width: 710px;
+    margin: 5px;
+    margin-top: -50px;
+}
+
+.flickity-viewport {
+    height: 500px !important;
+}
+
+.flickity-button {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel img {
+        height: 400px;
+    }
+}
+
+/* Section Carousel CSS End */
+
+/* Section tips CSS Start */
+#section-Tips {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide {
+    width: 100%;
+    max-width: 991px;
+    height: 500px;
+    border-color: transparent;
+    gap: 30px;
+    padding: 20px;
+}
+
+.slide h3 {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.slide h3:hover {
+    flex: 7;
+    width: 100%;
+    background-image: url(https://w0.peakpx.com/wallpaper/490/753/HD-wallpaper-closeup-view-of-green-plant-leaves-green-aesthetic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide h3 .numb {
+    min-width: 14em;
+    padding: .5em;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    letter-spacing: .1em;
+}
+
+.slide h3:hover .numb {
+    transform: rotate(0);
+    transition: .9s;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    background-color: #00000087;
+    margin-left: auto;
+}
+
+.pg {
+    display: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.slide h3:hover .pg {
+    display: block;
+    text-align: left;
+}
+
+.mobile-version {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.mobile-version li .numb {
+    margin: 20px;
+    padding: 10px;
+    background-image: url(https://w0.peakpx.com/wallpaper/490/753/HD-wallpaper-closeup-view-of-green-plant-leaves-green-aesthetic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Section tips CSS Ends */
+
+/* Section book CSS Starts */
+#book {
+    background-color: #82937b;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.details .rating {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    gap: .25em;
+}
+
+.details .rating i {
+    color: #e3c414;
+}
+
+.details .rating span {
+    margin-left: 0.25em;
+}
+
+.details .tags {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .85em;
+}
+
+.details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.details .cast h3 {
+    margin-bottom: .5em;
+}
+
+.details .cast ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.details .cast ul li {
+    list-style: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+}
+
+.details .cast ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Section book CSS Ends */
+
+/* Section info CSS Start */
+#plant-section {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+}
+
+#plant-section .image {
+    border-radius: 25px 0 25px 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.row {
+    justify-content: center;
+    width: 100%;
+}
+
+.card__like {
+    width: 18px;
+}
+
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+
+}
+
+.cardd {
+    margin-right: 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 100%;
+    height: 430px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.cardd:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__color {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__change {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.cardd:hover .card__img--hover {
+    height: 100%;
+    width: 400px;
+    opacity: 0.3;
+}
+
+.cardd:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.cardd:hover .card__info-hover {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin-left: 25px;
+    }
+
+    #plant-section {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+
+    .style_plant.plant-list.shadow.col-md-3.mb-10 {
+        height: 465px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 100px;
+        margin-left: 15px;
+        margin-right: 50px;
+    }
+
+    .cards {
+        width: 110%;
+    }
+
+    .cardd {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-left: 25px;
+    }
+
+    #plant-section {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+
+    .style_plant.plant-list.shadow.col-md-3.mb-10 {
+        height: 465px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 100px;
+        margin-left: 15px;
+        margin-right: 95px;
+    }
+
+    .cards {
+        width: 140%;
+    }
+
+    .cardd {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #plant-section {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .row {
+        width: 285px;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .style_plant.plant-list.shadow.col-md-3.mb-10 {
+        height: 465px;
+        margin-right: 10px;
+        margin-left: -10px;
+    }
+
+}
+
+/* Section info CSS End */
+
+footer {
+    margin-top: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

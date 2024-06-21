@@ -1,0 +1,109 @@
+body {
+  background-color: #dae5d5;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+}
+
+/* Section header CSS Start */
+.bg-dark-head {
+  background: linear-gradient(#343a40, transparent);
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  display: flex;
+  color: #FEFAE0;
+  transition: 0.6s ease;
+}
+
+#first {
+  color: #FEFAE0;
+  transition: 0.6s ease;
+}
+
+#second {
+  color: #FEFAE0;
+  border-bottom: transparent;
+  transition: 0.6s ease;
+}
+
+#third {
+  color: #FEFAE0;
+  border-bottom: transparent;
+  transition: 0.6s ease;
+}
+
+a.navbar-brand:hover #first {
+  color: #41bc41;
+}
+
+a.navbar-brand:hover #second {
+  color: #FEFAE0;
+  transform: rotateZ(-30deg) !important;
+}
+
+a.navbar-brand:hover #third {
+  color: #6e5033;
+  border-bottom: #6e5033 solid 2px;
+}
+
+li.nav-item #active {
+  color: #FEFAE0;
+  transition: 0.6s ease;
+}
+
+li.nav-item {
+  transition: 0.6s ease;
+}
+
+li.nav-item:hover {
+  color: #FEFAE0;
+}
+
+/* Section header CSS Ends */
+
+
+.txt-Paige {
+  color: #FEFAE0;
+}
+
+.line-Brown {
+  border: #6e5033 solid 1.7px;
+  width: 60px;
+  margin-top: -5px;
+}
+
+#contact-form {
+  background: linear-gradient(to right, #82937b, #6a8060); 
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; 
+}
+
+#contact_section .contact-info {
+  background: linear-gradient(to right, #a58d77, #6e5033); 
+  color: #FEFAE0;
+  border-radius: 10px;
+}
+
+#contact_section h1 {
+display: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2d422d;
+  border-color: #2d422d;
+}
+
+footer {
+  background-color: #343a40; 
+  color: #fff; 
+}

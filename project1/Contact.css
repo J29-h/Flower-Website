@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Gardener.png), url("Media/Trees02.png"), url("Media/Window.png"),
+    url("Media/background.png"), url("Media/Ground.png");
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right, center, center, bottom;
+  background-size: 15%, 25%, 100%, 100%, 100%;
+  z-index: -2;
+}
+
+header ul li a.active {
+  font-weight: bold;
+}
+
+header ul li a[href="contact.html"] {
+  font-weight: bold;
+  color: #bddb5b;
+  background: #fefae0;
+}
+
+header {
+  background-color: #d4a373;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a {
+  color: #ccd5ae;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+#form_subject {
+  color: #d4a373;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccd5ae;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #d4a373;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.contact-info {
+  width: 27%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info h2 {
+  color: #d4a373;
+}
+
+.plant-store-image {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 8%;
+  box-shadow: -5px 5px 5px #888;
+}
+
+.plant-store-image_1 {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 8%;
+  box-shadow: 5px 5px 5px #888;
+}
+
+footer {
+  background-color: #ccd5ae;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
